@@ -1,0 +1,34 @@
+version: '3.1'
+intents:
+- affirm
+- angry
+- bot_challenge
+- deny
+- goodbye
+- greet
+- mood_great
+- mood_unhappy
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://imgur.com/gallery/this-always-makes-me-laugh-2ozelaY
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_angry:
+  - text: What makes you angry today?
+  utter_calm_down:
+  - text: Relax! Take some time off and go watch a movie.
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+actions:
+- utter_iamabot
+- utter_greet

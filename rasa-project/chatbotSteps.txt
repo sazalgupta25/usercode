@@ -1,0 +1,18 @@
+steps to deploy chatbot:
+1. run the following command inside the /usercode/rasa-project, this will create a rasa-project
+    rasa init
+
+2. Some important files to consider:
+data/nlu.yml: Contains the training data in the form of intents and entities. Intents are used to classify individual user messages.
+data/stories.yml: Contains stories/conversations between the bot and a user.
+data/rules.yml: Contains rules that handle small conversations at any point.
+config.yml: Contains the pipeline that the bot will use to interpret the message.
+domain.yml: Contains all the intents and their corresponding responses.
+
+3. rasa train
+4. rasa shell
+5. rasa interactive
+6. rasa data validate
+7. rasa train
+8. rasa visualize
+9. 
