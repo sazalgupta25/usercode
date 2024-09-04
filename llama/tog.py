@@ -6,6 +6,6 @@ response = client.chat.completions.create(
   model="meta-llama/Llama-3-70b-chat-hf",
   messages=[{
     "role": "user", 
-    "content": "Explain Gen AI"}],
+    "content": "EKA Software"}],
 )
 print(response.choices[0].message.content)
