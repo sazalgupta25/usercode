@@ -4,7 +4,7 @@ from .models import Result
 import openai
 
 routes = Blueprint('routes', __name__)
-openai.api_key = 'sk-mJMiKCRTmkwfElTz5m9mUE9GeIDH7hkUIJasg6dK-eT3BlbkFJ79wRCWCd-aPgELp_t4Htr5IyRp1Z2jp050I-JzJeQA'
+openai.api_key = ''
 completion = openai.Completion()
 
 historyData = []
