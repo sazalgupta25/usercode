@@ -1,0 +1,15 @@
+# Example .gitignore file
+
+# Ignore lib folders
+lib/
+ENV_DIR/
+
+# Ignore Python virtual environments
+venv/
+env/
+.env/
+.venv/
+
+# Ignore IDE-specific folders (optional)
+.vscode/
+.idea/
